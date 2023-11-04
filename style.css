@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+.fname{
+    width:100%;
+    height: 100vh;
+    max-height: 100%;
+    background-image: url(r.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.flast{
+    width:85%;
+    margin:auto;
+    padding: 35px 0;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.logo{
+    cursor: pointer;
+    width:120px;
+  margin-right:auto;
+}
+.flast ul li{
+    position: relative;
+    top:0;
+    right:0;
+    list-style:none ;
+    display: inline-block;
+    margin:0 20px;
+    position:relative;
+}
+.flast ul li a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+}
+.flast ul li::after{
+    content:'';
+    height:3px;
+    width:0;
+    position:absolute;
+    background:#960000 ;
+    left:0;
+    bottom:-10px;
+    transition:0.5s;
+
+}
+.flast ul li:hover::after{
+    width:100%;
+}
+.content{
+    width:100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align:center;
+    color:blanchedalmond;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin:20px auto;
+    font-weight:500 ;
+    line-height: 25px;
+    color: rgb(0, 128, 53);
+    font-style: italic;
+    font-size: large;
+}
+button{
+    width:200px;
+    padding:15px 0px;
+    text-align: center ;
+    margin:20px 10px ;
+    border-radius:25px ;
+    font-weight: bold;
+    border:2px solid #009688 ;
+    background:transparent ;
+    color:#fff ;
+    cursor: pointer;
+    position: relative;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width:0%;
+    border-radius: 25px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+button:hover span{
+    width: 100%;
+
+}
+button:hover{
+    border: none;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    width:auto;
+    justify-content:center;
+    position:absolute;
+    bottom:0;
+    margin-bottom: 10px;
+    text-align: center;
+    position: absolute;
+    transform: translateX(300%);
+   
+    
+    
+}
+
+.foo a{
+    text-decoration: none;
+    background-color: blanchedalmond;
+    padding:10px;
+    border-radius: 50%;
+    justify-content: space-between;
+    margin: 10px;
+    position: relative;
+}
+.foo a i{
+    width:20px;
+    color: black;
+    opacity: 0.9;
+
+}
+.foo a:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+.foo a i:hover{
+    color:white;
+    transition: 0.5s;
+}
